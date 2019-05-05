@@ -1,0 +1,25 @@
+h1 {    
+    color: rgb(51, 100, 150);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 250%;
+    margin-top:  0em;
+}
+
+div.top-content {    
+    background-color: aquamarine;
+    text-align: center;
+}
+
+body{        
+    margin: 0em;
+    background-color: seashell;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.content {        
+    margin: 2em;    
+}
+
+a{
+    margin-right: 1em;
+}
