@@ -1,20 +1,12 @@
-/* div.heroDiv{
-    border: 2px solid gray;
-    padding: 0.5em;
-    width: 16%;
-    background-color: rgb(173, 198, 243);
-} */
-
 div.heroDiv{
     border: 2px solid gray;
     padding: 0.5em;
-    margin: 0.5em;
-    width: 16%;
+    margin: 0.5em; 
+    width: 80%;   
     background-color: rgb(173, 198, 243);    
 }
 
-li.heroItem {  
-    cursor: pointer;  
+li.heroItem {      
     list-style-type: none;
 }
 
@@ -27,8 +19,28 @@ div.heroDiv:hover{
     background-color: antiquewhite;
     position: relative;
     left: 0.1em;
+    cursor: pointer;
 }
 
 h2{
     margin-top: 0em;
+}
+
+div.heroes {
+    display: grid;
+    grid-template-columns: 1fr 3fr    
+}
+
+div.heroDetail {
+    padding: 0em;    
+    padding-left: 3em;
+}
+
+ul {    
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+div.heroList {
+    
 }

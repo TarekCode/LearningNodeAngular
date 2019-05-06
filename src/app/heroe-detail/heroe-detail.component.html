@@ -1,7 +1,11 @@
 <div *ngIf="hero" class="hero">
-  <h2>{{hero.Name}} Details</h2>
+  <h2>{{hero.Name}} Details<span style="float: right;">#{{hero.ID}}</span></h2>
   <p>ID: {{hero.ID}}</p>
   <label>Name:
     <input [(ngModel)]="hero.Name" placeholder="Name"/>
   </label>
+  <div class="buttons">
+    <button type="button">Save</button>     
+    <button type="button">Delete</button>
+  </div>  
 </div>

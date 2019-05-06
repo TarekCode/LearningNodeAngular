@@ -1,0 +1,15 @@
+div.buttons{    
+    margin: 0.5em;
+}
+
+/* div.hero {
+    height: 100%;
+    position: relative;
+} */
+
+div.hero h2 {
+    color: rgb(28, 11, 182);
+    font-size: 2em;
+    border-bottom: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}

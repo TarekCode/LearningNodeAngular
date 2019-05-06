@@ -17,6 +17,7 @@ export class HeroesComponent implements OnInit {
   ngOnInit() {
     this.heroService.getHeroes().subscribe(heroes => {
       this.myHeroes = heroes;
+      this.selectedHero = this.myHeroes[0];
     });
   }
 
@@ -29,5 +30,11 @@ export const mockHeroes: Hero[] = [
   new Hero("Superman"),
   new Hero("Batman"),
   new Hero("Spiderman"),
-  new Hero("test")
+  new Hero("DeveloperMan"),
+  new Hero("Hero1"),
+  new Hero("Hero2"),
+  new Hero("Hero3"),
+  new Hero("Hero4"),
+  new Hero("Hero5"),
+  new Hero("Hero6"),
 ];

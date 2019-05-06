@@ -1,15 +1,18 @@
-<div class="heroList">
-  <ul>
-    <li class="heroItem"     
-      *ngFor="let myHero of myHeroes"     
-      (click)="onSelect(myHero)">
-      <div class="heroDiv" [class.selected]="myHero === selectedHero">
-        <h2>{{myHero.Name}} Details</h2>
-        <div>ID: {{myHero.ID}}</div>
-        <div>Name: {{myHero.Name}}</div>               
-      </div>  
-    </li>
-  </ul>
+<div class="heroes">
+  <div class="heroList">
+    <ul>
+      <li class="heroItem"     
+        *ngFor="let myHero of myHeroes">
+        <div class="heroDiv" [class.selected]="myHero === selectedHero" (click)="onSelect(myHero)">
+          <h2>{{myHero.Name}} Details</h2>
+          <div>ID: {{myHero.ID}}</div>
+          <div>Name: {{myHero.Name}}</div>               
+        </div>  
+      </li>
+    </ul>
+  </div>
+  
+  <div class="heroDetail">
+    <app-heroe-detail [hero]="selectedHero"></app-heroe-detail>
+  </div>  
 </div>
-
-<app-heroe-detail [hero]="selectedHero"></app-heroe-detail>
